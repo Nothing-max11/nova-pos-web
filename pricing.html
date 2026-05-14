@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing Plans | Nove POS Enterprise</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;300;400;600;700;900&family=Inter:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    
+    <!-- Libraries -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.19/bundled/lenis.min.js"></script>
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="dark-theme">
+    <!-- Navbar -->
+    <nav class="main-nav">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-orb"></span>
+                <span class="logo-text">NOVE<span class="accent">POS</span></span>
+            </div>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="features.html">Features</a>
+                <a href="pricing.html" class="active">Pricing</a>
+                <a href="download.html">Download</a>
+            </div>
+            <div class="mobile-menu-btn"><i data-lucide="menu"></i></div>
+        </div>
+    </nav>
+
+    <div class="menu-overlay"></div>
+
+    <div class="pricing-page">
+        <header class="page-header-v2">
+            <div class="container">
+                <h1 class="gradient-text">Simple, Scaling Pricing.</h1>
+                <p>No hidden fees. No limits on your ambition. Select the engine that powers your retail growth.</p>
+                
+                <div class="toggle-container">
+                    <span class="toggle-label">Monthly</span>
+                    <label class="switch">
+                        <input type="checkbox" id="billing-toggle">
+                        <span class="slider round"></span>
+                    </label>
+                    <span class="toggle-label">Yearly <span class="discount-badge">Save 20%</span></span>
+                </div>
+            </div>
+        </header>
+
+        <section class="pricing-cards-section">
+            <div class="container">
+                <div class="pricing-grid-v2">
+                    <!-- Basic -->
+                    <div class="price-card-v2" data-aos="fade-up">
+                        <div class="p-header">
+                            <h3>Basic</h3>
+                            <p>For independent single-store owners.</p>
+                        </div>
+                        <div class="price-wrap">
+                            <span class="symbol">$</span>
+                            <span class="amount" data-monthly="10" data-yearly="8">10</span>
+                            <span class="period">/mo</span>
+                        </div>
+                        <a href="https://wa.me/yournumber" class="btn-glass-v2">Select Plan</a>
+                        <div class="divider"></div>
+                        <ul class="p-list-v2">
+                            <li><i data-lucide="check" class="tick"></i> <strong>1 Computer</strong> Access</li>
+                            <li><i data-lucide="check" class="tick"></i> Dashboard & Reports</li>
+                            <li><i data-lucide="check" class="tick"></i> Local Inventory</li>
+                            <li><i data-lucide="check" class="tick"></i> PDF Receipt Export</li>
+                            <li class="off"><i data-lucide="x" class="cross"></i> Cloud Sync Engine</li>
+                            <li class="off"><i data-lucide="x" class="cross"></i> AI Analytics</li>
+                            <li class="off"><i data-lucide="x" class="cross"></i> Multi-Branch Support</li>
+                        </ul>
+                    </div>
+
+                    <!-- Premium -->
+                    <div class="price-card-v2 featured" data-aos="fade-up" data-aos-delay="100">
+                        <div class="pop-badge">Best for Growth</div>
+                        <div class="p-header">
+                            <h3>Premium</h3>
+                            <p>For professional scaling retailers.</p>
+                        </div>
+                        <div class="price-wrap">
+                            <span class="symbol">$</span>
+                            <span class="amount" data-monthly="25" data-yearly="20">25</span>
+                            <span class="period">/mo</span>
+                        </div>
+                        <a href="https://wa.me/yournumber" class="btn-primary-v2">Start 7-Day Trial</a>
+                        <div class="divider"></div>
+                        <ul class="p-list-v2">
+                            <li><i data-lucide="check" class="tick"></i> <strong>3 Computers</strong> Access</li>
+                            <li><i data-lucide="check" class="tick"></i> Google Drive Cloud Sync</li>
+                            <li><i data-lucide="check" class="tick"></i> E-commerce Integration</li>
+                            <li><i data-lucide="check" class="tick"></i> Team Management</li>
+                            <li><i data-lucide="check" class="tick"></i> Advanced Audit Logs</li>
+                            <li class="off"><i data-lucide="x" class="cross"></i> AI Sales Forecasting</li>
+                            <li class="off"><i data-lucide="x" class="cross"></i> Multi-Branch Global Network</li>
+                        </ul>
+                    </div>
+
+                    <!-- Enterprise -->
+                    <div class="price-card-v2" data-aos="fade-up" data-aos-delay="200">
+                        <div class="p-header">
+                            <h3>Enterprise</h3>
+                            <p>Global infrastructure for retail chains.</p>
+                        </div>
+                        <div class="price-wrap">
+                            <span class="symbol">$</span>
+                            <span class="amount" data-monthly="60" data-yearly="50">60</span>
+                            <span class="period">/mo</span>
+                        </div>
+                        <a href="https://wa.me/yournumber" class="btn-glass-v2">Contact Sales</a>
+                        <div class="divider"></div>
+                        <ul class="p-list-v2">
+                            <li><i data-lucide="check" class="tick"></i> <strong>25 Computers</strong> Access</li>
+                            <li><i data-lucide="check" class="tick"></i> <strong>Unlimited</strong> Branches</li>
+                            <li><i data-lucide="check" class="tick"></i> Nove AI Assistant</li>
+                            <li><i data-lucide="check" class="tick"></i> Multi-Store Data Sync</li>
+                            <li><i data-lucide="check" class="tick"></i> Priority 24/7 Support</li>
+                            <li><i data-lucide="check" class="tick"></i> Custom API Access</li>
+                            <li><i data-lucide="check" class="tick"></i> White-Labeling Options</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="faq-section">
+            <div class="container">
+                <div class="section-header-v2" data-aos="fade-up">
+                    <h2>Frequently Asked <span class="gradient-text">Questions</span></h2>
+                    <p>Everything you need to know about Nove POS Enterprise.</p>
+                </div>
+                
+                <div class="faq-grid">
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>How does the Hardware ID lock work?</span>
+                            <i data-lucide="plus"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Nove POS cryptographically binds your license to your computer's unique hardware signature. This ensures that your business data is only accessible on authorized devices, preventing unauthorized access even if your credentials are leaked.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>Can I use Nove POS without internet?</span>
+                            <i data-lucide="plus"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Yes. Nove is built with a local-first architecture. All sales, inventory, and expense tracking work fully offline. Data will automatically sync to your secure cloud vault once a connection is restored.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>Is my data shared with anyone?</span>
+                            <i data-lucide="plus"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Never. Your data is encrypted locally before it ever leaves your machine. We use enterprise-grade AES-256 encryption. Even our engineers cannot see your business sales or customer details.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>Does the AI Assistant cost extra?</span>
+                            <i data-lucide="plus"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>The Nove AI Engine is included in the Enterprise plan. However, you will need to provide your own Google Gemini API key (which has a generous free tier) to enable the intelligence features.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Mega Footer -->
+    <footer class="footer-v2">
+        <div class="container">
+            <div class="footer-v2-grid">
+                <div class="f-vision">
+                    <span class="logo-text">NOVE<span class="accent">POS</span></span>
+                    <p>Our vision is to empower every retailer with the intelligence of a global enterprise. We build the operating system for the future of commerce.</p>
+                    <div class="f-socials">
+                        <a href="#"><i data-lucide="twitter"></i></a>
+                        <a href="#"><i data-lucide="linkedin"></i></a>
+                        <a href="#"><i data-lucide="instagram"></i></a>
+                        <a href="https://wa.me/yournumber"><i data-lucide="message-circle"></i></a>
+                    </div>
+                </div>
+                <div class="f-col">
+                    <h4>Product <i data-lucide="chevron-down"></i></h4>
+                    <nav>
+                        <a href="features.html">Features</a>
+                        <a href="pricing.html">Pricing</a>
+                        <a href="download.html">Download</a>
+                        <a href="features.html#ai">Nove AI</a>
+                    </nav>
+                </div>
+                <div class="f-col">
+                    <h4>Company <i data-lucide="chevron-down"></i></h4>
+                    <nav>
+                        <a href="#">About Us</a>
+                        <a href="#">Our Vision</a>
+                        <a href="#">Careers</a>
+                        <a href="#">Contact</a>
+                    </nav>
+                </div>
+                <div class="f-col">
+                    <h4>Support <i data-lucide="chevron-down"></i></h4>
+                    <nav>
+                        <a href="#">Help Center</a>
+                        <a href="#">Documentation</a>
+                        <a href="#">Security</a>
+                        <a href="#">Status</a>
+                    </nav>
+                </div>
+            </div>
+            <div class="footer-v2-bottom">
+                <p>&copy; 2026 Nove POS Enterprise. All rights reserved.</p>
+                <div class="f-legal">
+                    <a href="#" style="margin-right: 2rem;">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script>lucide.createIcons();</script>
+</body>
+</html>
