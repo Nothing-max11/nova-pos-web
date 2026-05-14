@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nova POS Enterprise | The Future of Retail Intelligence</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;300;400;600;700;900&family=Inter:wght@300;400;700;900&display=swap" rel="stylesheet">
+    
+    <!-- Libraries -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.19/bundled/lenis.min.js"></script>
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="dark-theme">
+    <!-- Navbar -->
+    <nav class="main-nav">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-orb"></span>
+                <span class="logo-text">NOVA<span class="accent">POS</span></span>
+            </div>
+            <div class="nav-links">
+                <a href="index.html" class="active">Home</a>
+                <a href="#features">Features</a>
+                <a href="pricing.html">Pricing</a>
+                <a href="download.html">Download</a>
+                <a href="#" class="nav-cta">Get Started</a>
+            </div>
+            <div class="mobile-menu-btn"><i data-lucide="menu"></i></div>
+        </div>
+    </nav>
+
+    <!-- Smooth Scroll Wrapper -->
+    <div id="smooth-wrapper">
+        <div id="smooth-content">
+            
+            <!-- Hero Section -->
+            <section class="hero-cinematic">
+                <div class="hero-bg-gradient"></div>
+                <div class="container">
+                    <div class="hero-content">
+                        <div class="badge-reveal"><span>v1.0.1 Enterprise Edition</span></div>
+                        <h1 class="hero-title">
+                            <span class="reveal-line">Retail Reimagined.</span>
+                            <span class="reveal-line gradient-text">Power Unleashed.</span>
+                        </h1>
+                        <p class="hero-subtitle">The next-generation AI-powered POS & ERP ecosystem for modern business giants.</p>
+                        <div class="hero-btns">
+                            <a href="download.html" class="btn-glow">Download Nova</a>
+                            <a href="pricing.html" class="btn-link">View Pricing <i data-lucide="chevron-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-device-reveal">
+                    <div class="device-frame">
+                        <img src="assets/nova_pos_mockup.png" alt="Nova POS Dashboard" class="hero-mockup">
+                        <div class="device-glow"></div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Philosophy Section -->
+            <section class="intro-text">
+                <div class="container">
+                    <h2 class="text-reveal">Nova is not just a tool. It's the <span class="white">command center</span> for your global retail empire. Seamless. Fast. Unbreakable.</h2>
+                </div>
+            </section>
+
+            <!-- Storytelling Features -->
+            <div id="features" class="story-features">
+                
+                <!-- Feature 1: Inventory -->
+                <section class="feature-story" id="f1">
+                    <div class="container">
+                        <div class="story-grid">
+                            <div class="story-visual">
+                                <div class="visual-wrap">
+                                    <img src="assets/nova_pos_mockup.png" alt="Inventory Management" class="story-img">
+                                    <div class="floating-ui ui-1"><i data-lucide="package"></i> Stock Low</div>
+                                </div>
+                            </div>
+                            <div class="story-info">
+                                <span class="feature-number">01</span>
+                                <h2>Surgical <span class="gradient-text">Inventory Control.</span></h2>
+                                <p>Manage thousands of SKUs across multiple branches with sub-second accuracy. Real-time logging, automated restock alerts, and beautiful product grids.</p>
+                                <ul class="feature-tags">
+                                    <li>Multi-Branch</li>
+                                    <li>Sub-SKU Tracking</li>
+                                    <li>Barcode System</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Feature 2: AI -->
+                <section class="feature-story reverse" id="f2">
+                    <div class="container">
+                        <div class="story-grid">
+                            <div class="story-visual">
+                                <div class="visual-wrap">
+                                    <img src="assets/nova_ai_visual.png" alt="Nova AI Assistant" class="story-img">
+                                    <div class="glow-orb-bg cyan"></div>
+                                </div>
+                            </div>
+                            <div class="story-info">
+                                <span class="feature-number">02</span>
+                                <h2>Intelligence <br>That <span class="gradient-text">Predicts.</span></h2>
+                                <p>Our built-in Nova AI Assistant analyzes your sales data to predict future trends, identify high-performing staff, and optimize your profit margins.</p>
+                                <ul class="feature-tags">
+                                    <li>Trend Forecasting</li>
+                                    <li>Automated Audits</li>
+                                    <li>AI Reporting</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Feature 3: Sync & Cloud -->
+                <section class="feature-story" id="f3">
+                    <div class="container">
+                        <div class="story-grid">
+                            <div class="story-visual">
+                                <div class="visual-wrap">
+                                    <img src="assets/nova_sync_visual.png" alt="Cloud Sync" class="story-img">
+                                    <div class="glow-orb-bg purple"></div>
+                                </div>
+                            </div>
+                            <div class="story-info">
+                                <span class="feature-number">03</span>
+                                <h2>Synchronized <br><span class="gradient-text">Universe.</span></h2>
+                                <p>Whether you have one shop or a hundred, Nova keeps your data in perfect harmony. Auto-backups to Google Drive and real-time Firebase sync ensure you never lose a byte.</p>
+                                <ul class="feature-tags">
+                                    <li>Real-time Cloud</li>
+                                    <li>Offline-First</li>
+                                    <li>Auto-Backup</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Feature 4: Security -->
+                <section class="feature-story reverse" id="f4">
+                    <div class="container">
+                        <div class="story-grid">
+                            <div class="story-visual">
+                                <div class="visual-wrap">
+                                    <img src="assets/nova_security_visual.png" alt="Enterprise Security" class="story-img">
+                                </div>
+                            </div>
+                            <div class="story-info">
+                                <span class="feature-number">04</span>
+                                <h2>Hardened <br><span class="gradient-text">Security.</span></h2>
+                                <p>Enterprise-grade encryption and hardware-locked licensing. Your data is your property. We ensure it stays that way with local-first storage and encrypted vaults.</p>
+                                <ul class="feature-tags">
+                                    <li>Hardware ID Lock</li>
+                                    <li>AES-256 Encryption</li>
+                                    <li>Audit Logs</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+
+            <!-- Global Reach Stats -->
+            <section class="stats-cinematic">
+                <div class="container">
+                    <div class="stats-grid">
+                        <div class="stat-item">
+                            <div class="stat-num" data-val="100">0</div>
+                            <span class="stat-text">Branches Managed</span>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-num" data-val="50">0</div>
+                            <span class="stat-text">k+ Transactions/day</span>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-num" data-val="99">0</div>
+                            <span class="stat-text">% Uptime Efficiency</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- CTA Section -->
+            <section class="cta-launch">
+                <div class="container">
+                    <div class="launch-card">
+                        <h2>Ready to Launch Your Empire?</h2>
+                        <p>Join the thousands of retailers scaling their business with Nova POS.</p>
+                        <div class="launch-btns">
+                            <a href="download.html" class="btn-white">Get Started for Free</a>
+                            <a href="https://wa.me/yournumber" class="btn-glass">Request Custom Build</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Footer -->
+            <footer class="footer-premium">
+                <div class="container">
+                    <div class="footer-grid">
+                        <div class="footer-brand">
+                            <span class="logo-text">NOVA<span class="accent">POS</span></span>
+                            <p>Built for the giants of tomorrow.</p>
+                        </div>
+                        <div class="footer-links-group">
+                            <div class="f-col">
+                                <h4>Product</h4>
+                                <a href="pricing.html">Pricing</a>
+                                <a href="download.html">Download</a>
+                                <a href="#">Changelog</a>
+                            </div>
+                            <div class="f-col">
+                                <h4>Support</h4>
+                                <a href="#">Documentation</a>
+                                <a href="#">Tutorials</a>
+                                <a href="https://wa.me/yournumber">Contact Sales</a>
+                            </div>
+                            <div class="f-col">
+                                <h4>Legal</h4>
+                                <a href="#">Terms</a>
+                                <a href="#">Privacy</a>
+                                <a href="#">Licensing</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-bottom">
+                        <p>&copy; 2026 Nova POS Enterprise. All rights reserved.</p>
+                    </div>
+                </div>
+            </footer>
+
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
