@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Features | NOVE POS</title>
+    <meta name="description" content="Explore all powerful features of NOVE POS — AI insights, inventory, multicompany, debtors ledger, and more.">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        .features-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 2rem; margin-top: 5rem; }
+        .feature-item { padding: 3rem 2rem; border-radius: 32px; transition: background 0.3s; }
+        .feature-item:hover { background: rgba(255,255,255,0.05); }
+        .feature-icon { width: 60px; height: 60px; background: rgba(0,242,255,0.1); border-radius: 16px; display: flex; align-items: center; justify-content: center; margin-bottom: 2rem; color: var(--primary); }
+        @media (max-width: 768px) { .features-grid { grid-template-columns: 1fr; } }
+    </style>
+</head>
+<body>
+    <nav class="navbar scrolled" id="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <div class="logo-icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+                </div>
+                <span>NOVE<span style="opacity:0.5">POS</span></span>
+            </a>
+            <div class="nav-links">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="features.html" class="nav-link active">Features</a>
+                <a href="pricing.html" class="nav-link">Pricing</a>
+                <a href="download.html" class="nav-link">Download</a>
+                <a href="faq.html" class="nav-link">FAQ</a>
+                <a href="contact.html" class="btn-primary" style="padding:0.6rem 1.5rem;font-size:0.85rem;">Book Demo</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle"><span></span><span></span><span></span></div>
+        </div>
+    </nav>
+
+    <div class="mobile-menu" id="mobile-menu">
+        <div class="close-menu" id="close-menu">&times;</div>
+        <a href="index.html">Home</a>
+        <a href="features.html">Features</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="download.html">Download</a>
+        <a href="faq.html">FAQ</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="documentation.html">Docs</a>
+    </div>
+
+    <main class="container" style="padding-top:150px;padding-bottom:100px;">
+        <div style="text-align:center;margin-bottom:8rem;">
+            <div class="section-badge">POWERFUL CAPABILITIES</div>
+            <h1 style="font-size:clamp(2.5rem,5vw,4rem);line-height:1.1;margin-bottom:1.5rem;margin-top:1.5rem;">What makes <span class="gradient-text">NOVE prominent?</span></h1>
+            <p style="font-size:1.2rem;color:var(--text-dim);max-width:700px;margin:0 auto;">An enterprise-grade feature set designed to scale with your business ambitions.</p>
+        </div>
+
+        <!-- Bento Feature Grid -->
+        <div class="bento-grid">
+            <div class="bento-card glass bento-wide" style="background:linear-gradient(135deg,rgba(112,0,255,0.1),rgba(0,242,255,0.1));border:1px solid rgba(112,0,255,0.2);">
+                <div class="bento-content">
+                    <div class="feature-icon" style="background:var(--gradient);color:white;"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm0 18a8 8 0 1 1 8-8 8 8 0 0 1-8 8z"/><path d="M12 6v6l4 2"/></svg></div>
+                    <div class="section-badge" style="background:rgba(255,255,255,0.1);color:white;border:none;border-radius:4px;font-size:10px;margin-bottom:1rem;">NEW FEATURE</div>
+                    <h2>NOVE AI Assistant</h2>
+                    <p>Meet the future of retail management. NOVE AI analyzes your sales patterns to predict low-stock events, identify top-selling trends, and provide intelligent business audits in real-time.</p>
+                </div>
+            </div>
+
+            <div class="bento-card glass">
+                <div class="feature-icon" style="background:rgba(255,87,87,0.1);color:#ff5757;"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div>
+                <h3>Smart Debtors Ledger</h3>
+                <p>Advanced credit management system that tracks customer balances and automates payment reminders.</p>
+            </div>
+
+            <div class="bento-card glass">
+                <div class="feature-icon" style="background:rgba(0,242,255,0.1);color:var(--primary);"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="16" height="20" x="4" y="2" rx="2"/><line x1="9" x2="15" y1="22" y2="22"/><path d="M8 6h.01"/><path d="M16 6h.01"/><path d="M8 10h.01"/><path d="M16 10h.01"/></svg></div>
+                <h3>Multicompany</h3>
+                <p>Handle more than one company or multiple locations effortlessly within NOVE.</p>
+            </div>
+
+            <div class="bento-card glass">
+                <div class="feature-icon" style="background:rgba(112,0,255,0.1);color:#7000ff;"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
+                <h3>Customer Management</h3>
+                <p>Manage debit/credit ledgers and view sale history instantly during checkout.</p>
+            </div>
+
+            <div class="bento-card glass">
+                <div class="feature-icon" style="background:rgba(255,138,0,0.1);color:#ff8a00;"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 10h16"/><path d="M4 14h16"/><path d="M12 2v20"/></svg></div>
+                <h3>Expense Analytics</h3>
+                <p>Track every penny. Built-in expense management helps you monitor margins and reduce overhead.</p>
+            </div>
+
+            <div class="bento-card glass bento-wide" style="background:linear-gradient(135deg,rgba(0,255,136,0.05),transparent);">
+                <div class="bento-content">
+                    <div class="feature-icon" style="background:rgba(0,255,136,0.1);color:#00ff88;"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><line x1="3" x2="21" y1="6" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg></div>
+                    <h2>Hybrid E-commerce Sync</h2>
+                    <p>Sell in-store and online simultaneously. NOVE synchronizes your inventory across your physical shop and web store in real-time.</p>
+                </div>
+            </div>
+
+            <div class="bento-card glass">
+                <div class="feature-icon" style="background:rgba(255,255,255,0.1);color:white;"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10"/></svg></div>
+                <h3>Enterprise Security</h3>
+                <p>End-to-end encryption, hardware-locked licensing, and automated backups for complete peace of mind.</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- FEATURE WALKTHROUGH -->
+    <section class="walkthrough-section">
+        <div class="container">
+            <div class="section-badge" style="display:block;text-align:center;width:fit-content;margin:0 auto 1.5rem;">DEEP DIVE</div>
+            <h2>See it in action</h2>
+            <p class="section-sub">Click any feature to see a live preview of how it works inside NOVE POS.</p>
+            <div class="walkthrough-grid">
+                <div class="walkthrough-tabs">
+                    <div class="wt-tab active" data-panel="sales">
+                        <h4><span class="wt-tab-icon" style="background:rgba(0,242,255,0.1);">🧾</span>Sales & Checkout</h4>
+                        <p>Process sales in seconds with barcode scanning, quick-add products, and one-tap payment methods including cash, card, and credit.</p>
+                    </div>
+                    <div class="wt-tab" data-panel="inventory">
+                        <h4><span class="wt-tab-icon" style="background:rgba(255,184,0,0.1);">📦</span>Inventory Control</h4>
+                        <p>Real-time stock tracking across all locations with automatic low-stock alerts and purchase order suggestions from NOVE AI.</p>
+                    </div>
+                    <div class="wt-tab" data-panel="reports">
+                        <h4><span class="wt-tab-icon" style="background:rgba(112,0,255,0.1);">📊</span>Smart Reports</h4>
+                        <p>Beautiful, exportable PDF reports for daily sales, profit margins, top products, and customer activity — all generated in one click.</p>
+                    </div>
+                    <div class="wt-tab" data-panel="customers">
+                        <h4><span class="wt-tab-icon" style="background:rgba(0,255,136,0.1);">👥</span>Customer Ledger</h4>
+                        <p>Full credit/debit ledger per customer with payment history, outstanding balance tracker, and SMS reminder support.</p>
+                    </div>
+                </div>
+                <div class="walkthrough-preview">
+                    <div class="preview-panel active" id="panel-sales">
+                        <h3>⚡ Lightning-fast Checkout</h3>
+                        <p>Process any sale in under 10 seconds. Scan, select, confirm — done. Supports multiple payment methods simultaneously.</p>
+                        <div class="preview-visual">
+                            <div class="preview-row accent" style="width:90%;height:14px;"></div>
+                            <div class="preview-row" style="width:70%;"></div>
+                            <div class="preview-row" style="width:85%;"></div>
+                            <div class="preview-row w60"></div>
+                            <div style="display:flex;gap:0.75rem;margin-top:0.5rem;">
+                                <div style="flex:1;height:32px;background:rgba(0,242,255,0.15);border-radius:6px;"></div>
+                                <div style="flex:1;height:32px;background:rgba(0,255,136,0.15);border-radius:6px;"></div>
+                                <div style="flex:1;height:32px;background:rgba(112,0,255,0.15);border-radius:6px;"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="preview-panel" id="panel-inventory">
+                        <h3>📦 Real-Time Stock</h3>
+                        <p>Every sale, return, and purchase updates your stock count instantly. Never sell an item you don't have again.</p>
+                        <div class="preview-visual">
+                            <div style="display:flex;flex-direction:column;gap:0.6rem;">
+                                <div style="display:flex;align-items:center;gap:0.75rem;">
+                                    <div style="width:8px;height:8px;border-radius:50%;background:#00ff88;flex-shrink:0;"></div>
+                                    <div class="preview-row" style="flex:1;margin:0;"></div>
+                                    <span style="font-size:0.7rem;color:rgba(255,255,255,0.3);">842 units</span>
+                                </div>
+                                <div style="display:flex;align-items:center;gap:0.75rem;">
+                                    <div style="width:8px;height:8px;border-radius:50%;background:#ffb800;flex-shrink:0;"></div>
+                                    <div class="preview-row" style="flex:1;margin:0;width:60%;"></div>
+                                    <span style="font-size:0.7rem;color:#ffb800;">12 units ⚠</span>
+                                </div>
+                                <div style="display:flex;align-items:center;gap:0.75rem;">
+                                    <div style="width:8px;height:8px;border-radius:50%;background:#ff5757;flex-shrink:0;"></div>
+                                    <div class="preview-row" style="flex:1;margin:0;width:20%;"></div>
+                                    <span style="font-size:0.7rem;color:#ff5757;">3 units 🔴</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="preview-panel" id="panel-reports">
+                        <h3>📊 One-Click Reports</h3>
+                        <p>From daily sales summaries to full profit/loss statements — export to PDF, Excel, or share directly via WhatsApp.</p>
+                        <div class="preview-visual">
+                            <div class="preview-row accent" style="width:50%;height:6px;"></div>
+                            <div class="preview-row w80" style="margin-top:0.75rem;"></div>
+                            <div class="preview-row w60"></div>
+                            <div class="preview-row green"></div>
+                            <div class="preview-row w40"></div>
+                            <div style="display:flex;gap:0.5rem;margin-top:0.75rem;">
+                                <div style="flex:1;height:24px;background:rgba(0,242,255,0.1);border-radius:4px;border:1px solid rgba(0,242,255,0.2);"></div>
+                                <div style="flex:1;height:24px;background:rgba(0,255,136,0.1);border-radius:4px;border:1px solid rgba(0,255,136,0.2);"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="preview-panel" id="panel-customers">
+                        <h3>👥 Customer Ledger</h3>
+                        <p>Every customer's complete financial history at a glance. Track outstanding payments and send reminders with one tap.</p>
+                        <div class="preview-visual">
+                            <div style="display:flex;align-items:center;gap:0.75rem;margin-bottom:0.5rem;">
+                                <div style="width:32px;height:32px;border-radius:50%;background:linear-gradient(135deg,#00f2ff,#7000ff);flex-shrink:0;"></div>
+                                <div style="flex:1;">
+                                    <div class="preview-row" style="width:60%;height:8px;margin-bottom:4px;"></div>
+                                    <div class="preview-row" style="width:40%;height:6px;"></div>
+                                </div>
+                                <span style="font-size:0.7rem;color:#ff5757;">Rs.4,500 due</span>
+                            </div>
+                            <div style="display:flex;align-items:center;gap:0.75rem;">
+                                <div style="width:32px;height:32px;border-radius:50%;background:linear-gradient(135deg,#ffb800,#ff5757);flex-shrink:0;"></div>
+                                <div style="flex:1;">
+                                    <div class="preview-row" style="width:55%;height:8px;margin-bottom:4px;"></div>
+                                    <div class="preview-row" style="width:35%;height:6px;"></div>
+                                </div>
+                                <span style="font-size:0.7rem;color:#00ff88;">Cleared ✓</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WhatsApp Float -->
+    <a href="https://wa.me/923104523517" target="_blank" class="whatsapp-float" aria-label="Chat on WhatsApp">
+        <span class="whatsapp-pulse"></span>
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    </a>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a href="index.html" class="logo" style="margin-bottom:1.5rem;">NOVE<span style="opacity:0.5">POS</span></a>
+                    <p style="color:var(--text-dim);">Transforming retail with cinematic software solutions.</p>
+                </div>
+                <div class="footer-col"><h4>Product</h4><ul><li><a href="features.html">Features</a></li><li><a href="pricing.html">Pricing</a></li><li><a href="download.html">Download</a></li></ul></div>
+                <div class="footer-col"><h4>Company</h4><ul><li><a href="about.html">About Us</a></li><li><a href="contact.html">Contact</a></li><li><a href="custom-app.html">Custom Dev</a></li></ul></div>
+                <div class="footer-col"><h4>Support</h4><ul><li><a href="faq.html">FAQ</a></li><li><a href="documentation.html">Docs</a></li><li><a href="contact.html">Contact Support</a></li></ul></div>
+            </div>
+            <div style="margin-top:4rem;padding-top:2rem;border-top:1px solid var(--border);text-align:center;color:var(--text-dim);font-size:0.8rem;">&copy; 2026 NOVE POS. All rights reserved.</div>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentation | Nove POS</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        .docs-container { max-width: 1200px; margin: 5rem auto; display: grid; grid-template-columns: 250px 1fr; gap: 4rem; }
+        .docs-sidebar ul { list-style: none; display: flex; flex-direction: column; gap: 1rem; }
+        .docs-sidebar a { color: var(--text-dim); text-decoration: none; font-weight: 500; }
+        .docs-sidebar a.active { color: var(--primary); font-weight: 700; }
+        .docs-content h2 { margin-bottom: 1.5rem; }
+        .docs-content p { color: var(--text-dim); line-height: 1.8; margin-bottom: 2rem; }
+        code { background: rgba(255,255,255,0.05); padding: 0.2rem 0.5rem; border-radius: 4px; font-family: monospace; color: var(--primary); }
+    </style>
+</head>
+<body>
+    <nav class="navbar scrolled">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <div class="logo-icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+                </div>
+                <span>Nove<span style="opacity: 0.5;">POS</span></span>
+            </a>
+            <div class="nav-links">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="features.html" class="nav-link">Features</a>
+                <a href="pricing.html" class="nav-link">Pricing</a>
+                <a href="download.html" class="nav-link">Download</a>
+                <a href="faq.html" class="nav-link">FAQ</a>
+                <a href="contact.html" class="btn-primary" style="padding: 0.6rem 1.5rem; font-size: 0.85rem;">Book Demo</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container" style="padding-top: 150px;">
+        <div class="docs-container">
+            <aside class="docs-sidebar">
+                <h3>Getting Started</h3>
+                <ul style="margin-top: 1.5rem;">
+                    <li><a href="#" class="doc-link active" data-section="intro">Introduction</a></li>
+                    <li><a href="#" class="doc-link" data-section="install">Installation</a></li>
+                    <li><a href="#" class="doc-link" data-section="config">Configuration</a></li>
+                    <li><a href="#" class="doc-link" data-section="sale">First Sale</a></li>
+                </ul>
+                <h3 style="margin-top: 2rem;">Advanced</h3>
+                <ul style="margin-top: 1.5rem;">
+                    <li><a href="#" class="doc-link" data-section="sync">Cloud Sync API</a></li>
+                    <li><a href="#" class="doc-link" data-section="hardware">Hardware Integration</a></li>
+                </ul>
+            </aside>
+            <article class="docs-content" id="docs-viewport">
+                <div id="section-intro" class="doc-section active">
+                    <h1 class="gradient-text" style="font-size: 3rem; margin-bottom: 2rem;">Introduction</h1>
+                    <p>Welcome to the Nove POS documentation. This guide will help you set up and optimize your POS system for maximum efficiency.</p>
+                    <h2>What is Nove POS?</h2>
+                    <p>Nove POS is a comprehensive point of sale solution designed for retailers, restaurants, and service providers. It combines local-first reliability with cloud-sync power.</p>
+                </div>
+
+                <div id="section-install" class="doc-section" style="display: none;">
+                    <h1 class="gradient-text" style="font-size: 3rem; margin-bottom: 2rem;">Installation</h1>
+                    <p>Setting up Nove POS is simple and fast. Follow these steps to get started:</p>
+                    <ol style="margin-left: 1.5rem; color: var(--text-dim); line-height: 2;">
+                        <li>Download the installer from our <a href="download.html">Download Page</a>.</li>
+                        <li>Run the <code>.exe</code> file (Windows) or install the App (Android/iOS).</li>
+                        <li>Follow the on-screen prompts to complete the setup.</li>
+                    </ol>
+                </div>
+
+                <div id="section-config" class="doc-section" style="display: none;">
+                    <h1 class="gradient-text" style="font-size: 3rem; margin-bottom: 2rem;">Configuration</h1>
+                    <p>After installation, you need to configure your business settings:</p>
+                    <ul style="margin-left: 1.5rem; color: var(--text-dim); line-height: 2;">
+                        <li><strong>Business Profile:</strong> Set your name, address, and tax ID.</li>
+                        <li><strong>Cloud Sync:</strong> Connect your Google Drive for automated backups.</li>
+                        <li><strong>Terminals:</strong> Add and name your POS terminals.</li>
+                    </ul>
+                </div>
+
+                <div id="section-sale" class="doc-section" style="display: none;">
+                    <h1 class="gradient-text" style="font-size: 3rem; margin-bottom: 2rem;">First Sale</h1>
+                    <p>Making your first sale is as easy as 1-2-3:</p>
+                    <ol style="margin-left: 1.5rem; color: var(--text-dim); line-height: 2;">
+                        <li>Select items from your inventory or scan a barcode.</li>
+                        <li>Click the <strong>Checkout</strong> button.</li>
+                        <li>Select the payment method and complete the transaction.</li>
+                    </ol>
+                </div>
+            </article>
+        </div>
+    </main>
+
+    <script>
+        document.querySelectorAll('.doc-link').forEach(link => {
+            link.addEventListener('click', (e) => {
+                e.preventDefault();
+                // Update links
+                document.querySelectorAll('.doc-link').forEach(l => l.classList.remove('active'));
+                link.classList.add('active');
+                
+                // Update content
+                const sectionId = 'section-' + link.getAttribute('data-section');
+                document.querySelectorAll('.doc-section').forEach(sec => {
+                    sec.style.display = 'none';
+                });
+                const target = document.getElementById(sectionId);
+                if (target) target.style.display = 'block';
+            });
+        });
+    </script>
+</body>
+</html>
