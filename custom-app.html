@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Development | Nove POS</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        .custom-hero { padding: 150px 0; text-align: center; background: radial-gradient(circle at 50% 50%, rgba(112,0,255,0.1) 0%, transparent 50%); }
+        .process-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 2rem; margin: 5rem 0; }
+        .process-step { text-align: center; }
+        .step-num { font-size: 3rem; font-weight: 800; opacity: 0.2; margin-bottom: 1rem; }
+    </style>
+</head>
+<body>
+    <nav class="navbar scrolled">
+        <div class="container">
+            <a href="./" class="logo">
+                <div class="logo-icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+                </div>
+                <span>Nove<span style="opacity: 0.5;">POS</span></span>
+            </a>
+            <div class="nav-links">
+                <a href="./" class="nav-link">Home</a>
+                <a href="features" class="nav-link">Features</a>
+                <a href="pricing" class="nav-link">Pricing</a>
+                <a href="download" class="nav-link">Download</a>
+                <a href="faq" class="nav-link">FAQ</a>
+                <a href="contact" class="btn-primary" style="padding: 0.6rem 1.5rem; font-size: 0.85rem;">Book Demo</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container">
+        <section class="custom-hero">
+            <h1 class="gradient-text" style="font-size: 4rem;">Bespoke Solutions <br>for Unique Businesses.</h1>
+            <p style="font-size: 1.2rem; color: var(--text-dim); max-width: 800px; margin: 2rem auto;">Need a Custom POS Solution for Your Shop? We build tailored software ecosystems designed specifically for your operational needs.</p>
+            <a href="contact" class="btn-primary" style="margin-top: 2rem;">Request a Consultation</a>
+        </section>
+
+        <section class="process">
+            <h2 style="text-align: center; font-size: 2.5rem;">Our Development Process</h2>
+            <div class="process-grid">
+                <div class="process-step">
+                    <div class="step-num">01</div>
+                    <h3>Discovery</h3>
+                    <p style="color: var(--text-dim);">We analyze your business requirements and identify key pain points.</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-num">02</div>
+                    <h3>Design</h3>
+                    <p style="color: var(--text-dim);">Cinematic UI/UX design tailored to your brand identity.</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-num">03</div>
+                    <h3>Build</h3>
+                    <p style="color: var(--text-dim);">High-performance development using our core POS engine.</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-num">04</div>
+                    <h3>Deploy</h3>
+                    <p style="color: var(--text-dim);">Seamless integration and on-site staff training.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a href="./" class="logo" style="margin-bottom: 1.5rem;">Nove<span style="opacity: 0.5;">POS</span></a>
+                    <p style="color: var(--text-dim);">Transforming retail with cinematic software solutions.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Product</h4>
+                    <ul>
+                        <li><a href="features">Features</a></li>
+                        <li><a href="pricing">Pricing</a></li>
+                        <li><a href="download">Download</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="about">About Us</a></li>
+                        <li><a href="contact">Contact</a></li>
+                        <li><a href="custom-app">Custom Dev</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="faq">FAQ</a></li>
+                        <li><a href="documentation">Docs</a></li>
+                        <li><a href="#">Status</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div style="margin-top: 4rem; padding-top: 2rem; border-top: 1px solid var(--border); text-align: center; color: var(--text-dim); font-size: 0.8rem;">
+                &copy; 2026 Nove POS. All rights reserved.
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
