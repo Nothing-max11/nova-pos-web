@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://novepos.com/sitemap.xml
+Sitemap: https://novepos.enterprises/sitemap.xml
