@@ -27,6 +27,7 @@ export default defineConfig({
         about: resolve(__dirname, 'about.html'),
         contact: resolve(__dirname, 'contact.html'),
         documentation: resolve(__dirname, 'documentation.html'),
+        '404': resolve(__dirname, '404.html'),
         'custom-app': resolve(__dirname, 'custom-app.html'),
       },
     },
