@@ -222,13 +222,13 @@
             document.getElementById('btn-usd').classList.toggle('active', type === 'USD');
             const sym = document.querySelectorAll('.price-currency');
             if (type === 'PKR') {
-                document.getElementById('basic-price').textContent     = '2,499';
-                document.getElementById('premium-price').textContent   = '8,999';
-                document.getElementById('enterprise-price').textContent = '17,999';
+                document.getElementById('basic-price').textContent     = '1,999';
+                document.getElementById('premium-price').textContent   = '6,999';
+                document.getElementById('enterprise-price').textContent = '11,999';
                 sym.forEach(s => s.textContent = 'Rs.');
             } else {
-                document.getElementById('basic-price').textContent     = '29';
-                document.getElementById('premium-price').textContent   = '89';
+                document.getElementById('basic-price').textContent     = '15';
+                document.getElementById('premium-price').textContent   = '49';
                 document.getElementById('enterprise-price').textContent = '149';
                 sym.forEach(s => s.textContent = '$');
             }
