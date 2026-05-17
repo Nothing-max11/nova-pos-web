@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Interactive Demo | NOVE POS</title>
+    <meta name="description" content="Experience the lightning-fast speed of Nove POS directly in your browser. No downloads required.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    
+    <style>
+        .demo-container {
+            padding: 8rem 0 4rem;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .laptop-frame {
+            width: 100%;
+            max-width: 1200px;
+            background: #111;
+            border-radius: 20px 20px 0 0;
+            padding: 1rem 1rem 0;
+            box-shadow: 0 40px 100px rgba(112,0,255,0.2);
+            position: relative;
+            margin-top: 4rem;
+        }
+        .laptop-frame::before {
+            content: '';
+            position: absolute;
+            top: 6px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60px;
+            height: 6px;
+            background: #333;
+            border-radius: 10px;
+        }
+        .laptop-screen {
+            width: 100%;
+            aspect-ratio: 16/10;
+            background: #000;
+            border-radius: 8px 8px 0 0;
+            overflow: hidden;
+            border: 1px solid #333;
+            border-bottom: none;
+            position: relative;
+        }
+        .laptop-base {
+            width: 100%;
+            max-width: 1350px;
+            height: 25px;
+            background: linear-gradient(to bottom, #333, #111);
+            border-radius: 0 0 20px 20px;
+            position: relative;
+            margin-bottom: 4rem;
+        }
+        .laptop-base::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 150px;
+            height: 4px;
+            background: #555;
+            border-radius: 0 0 4px 4px;
+        }
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        .placeholder-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: var(--text-dim);
+        }
+    </style>
+</head>
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <a href="./" class="logo">
+                <div class="logo-icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+                </div>
+                <span>NOVE<span style="opacity:0.5">POS</span></span>
+            </a>
+            <div class="nav-links">
+                <a href="./" class="nav-link">Home</a>
+                <a href="features" class="nav-link">Features</a>
+                <a href="pricing" class="nav-link">Pricing</a>
+                <a href="download" class="nav-link">Download</a>
+                <a href="faq" class="nav-link">FAQ</a>
+                <a href="contact" class="btn-primary" style="padding:0.6rem 1.5rem;font-size:0.85rem;">Book Demo</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle"><span></span><span></span><span></span></div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="demo-container">
+            <div class="container text-center">
+                <div class="section-badge">INTERACTIVE SANDBOX</div>
+                <h1 style="font-size: clamp(2.5rem, 5vw, 4rem); margin-bottom: 1.5rem;">Experience the <span class="gradient-text">Speed of React.</span></h1>
+                <p style="color: var(--text-dim); font-size: 1.2rem; max-width: 700px; margin: 0 auto;">No downloads. No credit cards. Try the fully-functional web build of Nove POS right here in your browser.</p>
+                
+                <div style="margin-top: 2rem;">
+                    <button class="btn-primary" style="padding: 1rem 2.5rem; font-size: 1rem;" onclick="document.getElementById('demo-frame').src='https://demo.novepos.enterprises'">Reload Demo Workspace</button>
+                </div>
+            </div>
+
+            <!-- Laptop Mockup -->
+            <div class="laptop-frame">
+                <div class="laptop-screen">
+                    <!-- Replace the src with your Vite web build subdomain -->
+                    <iframe id="demo-frame" src="" title="Nove POS Live Demo"></iframe>
+                    
+                    <div class="placeholder-text" id="placeholder">
+                        <div style="margin-bottom: 1rem;"><svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color:var(--text-dim);"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line></svg></div>
+                        <h3 style="color: white; margin-bottom: 0.5rem;">Web Application Sandbox</h3>
+                        <p>Link your Vite `dist` build to this iframe to enable the live interactive demo.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="laptop-base"></div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container" style="text-align: center; padding: 4rem 0; border-top: 1px solid var(--border); color: var(--text-dim);">
+            &copy; 2026 NOVE POS. All rights reserved.
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script type="module" src="main.js"></script>
+    <script>
+        // Hide placeholder if iframe loads something
+        document.getElementById('demo-frame').onload = function() {
+            if(this.src && this.src !== window.location.href) {
+                document.getElementById('placeholder').style.display = 'none';
+            }
+        };
+    </script>
+</body>
+</html>

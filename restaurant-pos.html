@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant POS System & Kitchen Manager | NOVE POS</title>
+    <meta name="description" content="Streamline your restaurant with Nove POS. Offline POS software for restaurants featuring automated KOTs, split billing, table bookings, and recipe management.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Software Application Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "Nove Restaurant POS",
+      "operatingSystem": "Windows, Web, Cross-Platform",
+      "applicationCategory": "BusinessApplication",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "PKR",
+        "description": "One-time licensing model available."
+      },
+      "description": "A lightning-fast, React and Electron-powered Point of Sale system tailored for restaurants. Features 100% offline support, Kitchen Order Tickets (KOT), and split billing.",
+      "url": "https://novepos.enterprises/restaurant-pos.html"
+    }
+    </script>
+</head>
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <a href="./" class="logo">
+                <div class="logo-icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+                </div>
+                <span>NOVE<span style="opacity:0.5">POS</span></span>
+            </a>
+            <div class="nav-links">
+                <a href="./" class="nav-link">Home</a>
+                <a href="features" class="nav-link">Features</a>
+                <a href="pricing" class="nav-link">Pricing</a>
+                <a href="download" class="nav-link">Download</a>
+                <a href="faq" class="nav-link">FAQ</a>
+                <a href="contact" class="btn-primary" style="padding:0.6rem 1.5rem;font-size:0.85rem;">Book Demo</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle"><span></span><span></span><span></span></div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- HERO -->
+        <section class="hero" id="hero">
+            <canvas id="particle-canvas"></canvas>
+            <div class="container">
+                <div class="hero-grid">
+                    <div class="hero-content">
+                        <div class="section-badge">FOR CAFES & RESTAURANTS</div>
+                        <h1 style="font-size: 3.5rem;">The Ultimate <span class="gradient-text">Restaurant POS</span> & Kitchen Manager.</h1>
+                        <p>Streamline Kitchen Order Tickets (KOTs), Table Bookings, and Split Bills instantly. Manage raw ingredients and spoilage with precision, all with 100% offline reliability.</p>
+                        <div class="hero-cta">
+                            <a href="#" onclick="alert('Live Demo starting...')" class="btn-primary" style="padding: 1.2rem 3rem; font-size: 1.1rem;">Try the Live Demo</a>
+                            <a href="contact" class="btn-secondary" style="margin-left:1.5rem;color:white;text-decoration:none;font-weight:600;">Book a 15-Min Setup Call</a>
+                        </div>
+                    </div>
+
+                    <div class="hero-visual">
+                        <div class="dashboard-frame glass" id="dashboard" style="display:flex;align-items:center;justify-content:center;aspect-ratio:16/9;background:#000;overflow:hidden;border-radius:12px;padding:0;">
+                            <video autoplay loop muted playsinline style="width:100%;height:100%;object-fit:cover;">
+                                <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FEATURES -->
+        <section style="padding:8rem 0;background:rgba(255,255,255,0.02);">
+            <div class="container text-center">
+                <h2 style="font-size: 3rem; margin-bottom: 4rem;">Designed for the <span class="gradient-text">Food Industry</span></h2>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 3rem; text-align: left;">
+                    <div class="glass" style="padding: 2.5rem; border-radius: 20px;">
+                        <h3 style="margin-bottom: 1rem; color: #ffb800;">🔥 KOT Automation</h3>
+                        <p style="color: var(--text-dim); line-height: 1.6;">Send orders directly from the table to the kitchen display screen instantly. Never lose a ticket again.</p>
+                    </div>
+                    <div class="glass" style="padding: 2.5rem; border-radius: 20px;">
+                        <h3 style="margin-bottom: 1rem; color: #00f2ff;">💸 Split Billing</h3>
+                        <p style="color: var(--text-dim); line-height: 1.6;">Easily split a single bill across multiple patrons or payment methods with just two taps.</p>
+                    </div>
+                    <div class="glass" style="padding: 2.5rem; border-radius: 20px;">
+                        <h3 style="margin-bottom: 1rem; color: #7000ff;">📦 Recipe Management</h3>
+                        <p style="color: var(--text-dim); line-height: 1.6;">Track raw ingredients, control portion sizes, and log daily spoilage to prevent margin leaks.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEO BLOG POST LINK -->
+        <section style="padding: 4rem 0;">
+            <div class="container text-center">
+                <div class="glass" style="padding: 3rem; border-radius: 20px; border: 1px solid rgba(112,0,255,0.3); background: rgba(112,0,255,0.05);">
+                    <h2 style="font-size: 2rem; margin-bottom: 1rem; color: white;">Deep Dive: How to Eliminate Restaurant Downtime</h2>
+                    <p style="color: var(--text-dim); max-width: 600px; margin: 0 auto 2rem; font-size: 1.1rem;">Read our comprehensive guide on how offline-first architecture and KOT automation saves thousands in lost revenue during internet outages.</p>
+                    <a href="offline-restaurant-pos.html" class="btn-secondary" style="padding: 1rem 2rem; font-weight: 600; text-decoration: none; color: white;">Read the Technical Guide →</a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="container" style="text-align: center; padding: 4rem 0; border-top: 1px solid var(--border); color: var(--text-dim);">
+            &copy; 2026 NOVE POS. All rights reserved.
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script type="module" src="main.js"></script>
+</body>
+</html>
