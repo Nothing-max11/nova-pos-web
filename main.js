@@ -49,10 +49,17 @@ document.addEventListener('DOMContentLoaded', () => {
         if (!href || href.startsWith('#') || href.startsWith('http') || href.startsWith('mailto') || href.startsWith('tel') || a.target === '_blank') return;
         a.addEventListener('click', e => {
             e.preventDefault();
-            document.body.classList.add('page-out'); // CSS targets .page-out main, .page-out footer
+            document.body.classList.add('page-out');
             setTimeout(() => { window.location.href = href; }, 340);
         });
     });
+});
+
+// ---------- BFCache Blank Page Fix ----------
+window.addEventListener('pageshow', (event) => {
+    if (event.persisted) {
+        document.body.classList.remove('page-out');
+    }
 });
 
 // ---------- STAT COUNTER ----------
