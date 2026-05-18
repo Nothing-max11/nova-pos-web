@@ -2,6 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg">
+    <link rel="canonical" href="https://novepos.enterprises/contact.html">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact & Book Demo | NOVE POS</title>
     <meta name="description" content="Get in touch with the NOVE POS team. Book a live demo, ask questions, or request a custom POS solution.">
@@ -12,17 +14,18 @@
         .form-field { display: flex; flex-direction: column; gap: 0.5rem; }
         label { font-size: 0.88rem; font-weight: 600; color: var(--text-dim); }
         input, textarea, select {
-            background: rgba(255,255,255,0.04);
-            border: 1px solid rgba(255,255,255,0.1);
+            background: var(--card-bg);
+            border: 1.5px solid var(--border);
             padding: 0.9rem 1rem;
             border-radius: 12px;
-            color: white;
+            color: var(--text);
             width: 100%;
             font-family: var(--font-main);
             font-size: 0.9rem;
             transition: border-color 0.3s, box-shadow 0.3s;
         }
-        select option { background: #0f0f0f; }
+        input::placeholder, textarea::placeholder { color: var(--text-dim); opacity: 0.7; }
+        select option { background: var(--bg); color: var(--text); }
         textarea { resize: vertical; min-height: 120px; }
         .btn-submit {
             background: var(--gradient);
@@ -41,8 +44,8 @@
         .btn-submit:disabled { opacity: 0.5; cursor: not-allowed; }
         @media (max-width: 768px) { .contact-layout { grid-template-columns: 1fr; } }
     </style>
-  <script type="module" crossorigin src="./assets/main-WhAeBg4E.js"></script>
-  <link rel="stylesheet" crossorigin href="./assets/style-BPBCwO9Z.css">
+  <script type="module" crossorigin src="./assets/main-DBbNVEcH.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/style-CgpdzI2j.css">
 </head>
 <body>
     <nav class="navbar scrolled" id="navbar">
@@ -129,8 +132,8 @@
                     </div>
                 </div>
 
-                <div style="margin-top:2.5rem;padding:1.5rem;background:rgba(0,242,255,0.05);border:1px solid rgba(0,242,255,0.15);border-radius:16px;">
-                    <p style="font-size:0.85rem;color:var(--text-dim);line-height:1.7;">💡 <strong style="color:white;">Tip:</strong> For fastest response, message us on WhatsApp. We typically reply within 15 minutes during business hours.</p>
+                <div style="margin-top:2.5rem;padding:1.5rem;background:rgba(0,150,180,0.07);border:1px solid rgba(0,150,180,0.2);border-radius:16px;">
+                    <p style="font-size:0.85rem;color:var(--text-dim);line-height:1.7;"><strong style="color:var(--text);">Tip:</strong> For fastest response, message us on WhatsApp. We typically reply within 15 minutes during business hours.</p>
                 </div>
             </div>
 

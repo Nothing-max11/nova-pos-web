@@ -178,6 +178,32 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
+// ---------- INDUSTRY SELECTOR ----------
+document.addEventListener('DOMContentLoaded', () => {
+    const tabs = document.querySelectorAll('.ind-tab');
+    if (!tabs.length) return;
+
+    tabs.forEach(tab => {
+        tab.addEventListener('click', () => {
+            const industry = tab.dataset.industry;
+
+            // Swap tabs
+            document.querySelectorAll('.ind-tab').forEach(t => t.classList.remove('active'));
+            tab.classList.add('active');
+
+            // Swap images with cross-fade
+            document.querySelectorAll('.ind-img').forEach(img => img.classList.remove('active'));
+            const img = document.getElementById('img-' + industry);
+            if (img) img.classList.add('active');
+
+            // Swap text panels
+            document.querySelectorAll('.ind-panel').forEach(p => p.classList.remove('active'));
+            const panel = document.getElementById('panel-' + industry);
+            if (panel) panel.classList.add('active');
+        });
+    });
+});
+
 // ---------- FEATURE WALKTHROUGH ----------
 document.addEventListener('DOMContentLoaded', () => {
     const tabs = document.querySelectorAll('.wt-tab');
