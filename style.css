@@ -220,65 +220,157 @@ body {
 .hero { padding: 180px 0 100px; overflow: hidden; position: relative; }
 #particle-canvas { position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 0; pointer-events: none; }
 .hero .container { position: relative; z-index: 1; }
-.hero h1 { font-size: clamp(2.5rem, 6vw, 5rem); line-height: 1.1; margin-bottom: 2rem; font-weight: 800; }
+.hero h1 { font-size: clamp(2.5rem, 6vw, 5rem); line-height: 1.1; margin-bottom: 1.5rem; font-weight: 800; }
 
-/* Hero WhatsApp pill — trust signal visible before CTA */
-.hero-whatsapp-pill {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
-  padding: 0.55rem 1.1rem 0.55rem 0.85rem;
-  background: rgba(37, 211, 102, 0.1);
-  border: 1.5px solid rgba(37, 211, 102, 0.3);
-  border-radius: 100px;
-  color: #1a9e50;
-  text-decoration: none;
-  font-size: 0.82rem;
-  font-weight: 600;
-  margin-top: 1.75rem;
-  margin-bottom: 0;
-  transition: all 0.3s ease;
-  width: fit-content;
-}
-.hero-whatsapp-pill:hover {
-  background: rgba(37, 211, 102, 0.18);
-  border-color: rgba(37, 211, 102, 0.55);
-  transform: translateY(-1px);
-}
-.hero-whatsapp-pill svg { color: #25D366; flex-shrink: 0; }
-.hero-wa-number {
-  padding-left: 0.4rem;
-  border-left: 1.5px solid rgba(37, 211, 102, 0.3);
-  color: #25a244;
-  font-weight: 700;
+/* ---- Hero CTA row ---- */
+.hero-cta {
+  display: flex;
+  align-items: stretch;
+  gap: 1rem;
+  margin-top: 2.25rem;
+  margin-bottom: 1.25rem;
+  flex-wrap: wrap;
 }
 
-/* Free Trial CTA — secondary hero button */
-.btn-free-trial {
+/* Shared button base */
+.btn-hero-download,
+.btn-hero-trial {
   display: inline-flex;
   align-items: center;
-  gap: 0.5rem;
-  padding: 1.1rem 2.2rem;
-  border-radius: 50px;
-  font-weight: 700;
-  font-size: 1rem;
+  gap: 0.85rem;
+  padding: 0.9rem 1.6rem;
+  border-radius: 16px;
   text-decoration: none;
-  border: 2px solid var(--secondary);
+  font-family: var(--font-main);
+  transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  min-width: 0;
+  flex: 1;
+  max-width: 220px;
+}
+
+/* Download — gradient fill */
+.btn-hero-download {
+  background: var(--gradient);
+  color: white;
+  box-shadow: 0 8px 32px rgba(112,0,255,0.25), 0 2px 8px rgba(0,0,0,0.1);
+}
+.btn-hero-download:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 14px 40px rgba(112,0,255,0.35), 0 4px 12px rgba(0,0,0,0.12);
+}
+
+/* Trial — glass outline */
+.btn-hero-trial {
+  background: rgba(102,0,238,0.07);
   color: var(--secondary);
-  background: rgba(102, 0, 238, 0.06);
-  transition: all 0.3s ease;
-  margin-left: 1.25rem;
-  white-space: nowrap;
+  border: 2px solid rgba(102,0,238,0.3);
 }
-.btn-free-trial:hover {
+.btn-hero-trial:hover {
   background: var(--secondary);
   color: white;
-  transform: translateY(-2px);
-  box-shadow: 0 8px 24px rgba(102, 0, 238, 0.25);
+  border-color: var(--secondary);
+  transform: translateY(-3px);
+  box-shadow: 0 10px 32px rgba(102,0,238,0.3);
 }
+
+/* Shared button internals */
+.btn-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  background: rgba(255,255,255,0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.btn-hero-trial .btn-icon {
+  background: rgba(102,0,238,0.12);
+}
+.btn-hero-trial:hover .btn-icon {
+  background: rgba(255,255,255,0.2);
+}
+.btn-main-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.15rem;
+}
+.btn-title {
+  font-size: 0.95rem;
+  font-weight: 700;
+  line-height: 1;
+}
+.btn-subtitle {
+  font-size: 0.68rem;
+  opacity: 0.75;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+/* ---- WhatsApp trust bar ---- */
+.hero-whatsapp-bar {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.6rem 1rem;
+  background: rgba(37,211,102,0.08);
+  border: 1px solid rgba(37,211,102,0.22);
+  border-radius: 12px;
+  text-decoration: none;
+  color: #1a7a3a;
+  font-size: 0.82rem;
+  font-weight: 500;
+  margin-bottom: 1.25rem;
+  transition: all 0.3s ease;
+  max-width: fit-content;
+  position: relative;
+  overflow: hidden;
+}
+.hero-whatsapp-bar:hover {
+  background: rgba(37,211,102,0.14);
+  border-color: rgba(37,211,102,0.4);
+  color: #155e2e;
+  transform: translateX(2px);
+}
+.hero-whatsapp-bar strong { color: #166534; }
+.wa-dot {
+  width: 7px;
+  height: 7px;
+  background: #25D366;
+  border-radius: 50%;
+  box-shadow: 0 0 0 3px rgba(37,211,102,0.25);
+  flex-shrink: 0;
+  animation: waDotPulse 2s ease-in-out infinite;
+}
+@keyframes waDotPulse {
+  0%, 100% { box-shadow: 0 0 0 3px rgba(37,211,102,0.25); }
+  50% { box-shadow: 0 0 0 5px rgba(37,211,102,0.12); }
+}
+.wa-bar-text { flex: 1; }
+.wa-arrow { font-size: 0.8rem; opacity: 0.5; margin-left: 0.2rem; }
+
+/* ---- Trust micro-row ---- */
+.hero-trust-row {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  flex-wrap: wrap;
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--text-dim);
+}
+.trust-check {
+  color: #16a34a;
+  font-weight: 800;
+  margin-right: 0.2rem;
+}
+
 @media (max-width: 768px) {
-  .btn-free-trial { margin-left: 0; width: 100%; justify-content: center; }
-  .hero-whatsapp-pill { width: 100%; justify-content: center; }
+  .hero-cta { flex-direction: column; }
+  .btn-hero-download, .btn-hero-trial { max-width: 100%; flex: unset; }
+  .hero-whatsapp-bar { max-width: 100%; justify-content: center; }
+  .hero-trust-row { justify-content: center; }
 }
 .hero-grid {
   display: grid;
