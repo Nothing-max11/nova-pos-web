@@ -51,6 +51,10 @@ body {
   z-index: 1000;
   transition: 0.4s;
   padding: 1.5rem 0;
+  /* Always slightly frosted — looks polished even at page top for ad traffic */
+  background: rgba(245, 247, 250, 0.72);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
 }
 
 .navbar.scrolled {
@@ -217,6 +221,65 @@ body {
 #particle-canvas { position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 0; pointer-events: none; }
 .hero .container { position: relative; z-index: 1; }
 .hero h1 { font-size: clamp(2.5rem, 6vw, 5rem); line-height: 1.1; margin-bottom: 2rem; font-weight: 800; }
+
+/* Hero WhatsApp pill — trust signal visible before CTA */
+.hero-whatsapp-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.55rem 1.1rem 0.55rem 0.85rem;
+  background: rgba(37, 211, 102, 0.1);
+  border: 1.5px solid rgba(37, 211, 102, 0.3);
+  border-radius: 100px;
+  color: #1a9e50;
+  text-decoration: none;
+  font-size: 0.82rem;
+  font-weight: 600;
+  margin-top: 1.75rem;
+  margin-bottom: 0;
+  transition: all 0.3s ease;
+  width: fit-content;
+}
+.hero-whatsapp-pill:hover {
+  background: rgba(37, 211, 102, 0.18);
+  border-color: rgba(37, 211, 102, 0.55);
+  transform: translateY(-1px);
+}
+.hero-whatsapp-pill svg { color: #25D366; flex-shrink: 0; }
+.hero-wa-number {
+  padding-left: 0.4rem;
+  border-left: 1.5px solid rgba(37, 211, 102, 0.3);
+  color: #25a244;
+  font-weight: 700;
+}
+
+/* Free Trial CTA — secondary hero button */
+.btn-free-trial {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1.1rem 2.2rem;
+  border-radius: 50px;
+  font-weight: 700;
+  font-size: 1rem;
+  text-decoration: none;
+  border: 2px solid var(--secondary);
+  color: var(--secondary);
+  background: rgba(102, 0, 238, 0.06);
+  transition: all 0.3s ease;
+  margin-left: 1.25rem;
+  white-space: nowrap;
+}
+.btn-free-trial:hover {
+  background: var(--secondary);
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(102, 0, 238, 0.25);
+}
+@media (max-width: 768px) {
+  .btn-free-trial { margin-left: 0; width: 100%; justify-content: center; }
+  .hero-whatsapp-pill { width: 100%; justify-content: center; }
+}
 .hero-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;   /* Equal columns — prevents dashboard crushing text */
